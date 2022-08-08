@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Profile- Fast&Yummy</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  href="" th:href="@{/css/profile.css}" />
+
+</head>
+<body>
+<div class="Home-bar">
+	 <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+        <ul>
+            <li class="Home.html"><a href=Home.html><i class="fa fa-home"></i>Home</a></li>
+            <li class="Menu.html"><a href="Menu.html"><i class="fa fa-clone"></i>Menu</a></li>
+            <li class="Profile.html"><a href="Profile.html"><i class="fa fa-user-circle-o"></i>Profile</a></li>
+            <li class="MyCart.html"><a href="MyCart.html"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
+            <li class="Contact.html"><a href="Contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+            <li class="AboutUs.html"><a href="AboutUs.html"><i class="fa fa-users"></i>About Us</a></li>
+        </ul>
+    </div>
+    </body>
+<center>
+
+<div class="box" align:"center">
+	
+            
+
+ <form action="#" th:action="@{/save}" method="post" th:object="${profiles}"  >
+            >
+<input type="file" id="file" name="image" >
+<img src="images/logo.jpg" width="100%" height="100%">
+
+
+
+<input type="text" th:field="*{Full_Name}" placeholder="Full_Name" name="" >
+<input type="email" th:field="*{Email_ID}"placeholder="Email ID" name="" >
+<input type="text" th:field="*{Phone_Number}"placeholder="Phone Number" name="" >
+<input type="text" th:field="*{DOB}"placeholder="Date of Birth" name="">
+<input type="text" th:field="*{Address}"placeholder="Address" name="" >
+<div class="form-wrapper">
+<select  class="form-control" th:field="*{Gender}"  >
+<option value=""  selected>Gender</option>
+<option th:value="'M'" th:text="Male"></option>
+<option th:value="'F'" th:text="Female"></option>
+<option th:value="'O'" th:text="Others"></option>
+</select>
+</div>
+<button style="float: left;margin: 20px 0 0 18.2%;">CANCEL</button>
+
+<button type="submit" style="float: right;margin: 20px 18.2% 0 0;">Save</button>
+</form>
+</div>
+
+
+
+
+</center>
+</html>

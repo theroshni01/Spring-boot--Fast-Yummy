@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Success</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  href="" th:href="@{/css/profiledetails.css}" />
+	
+<style type="text/css">
+span {
+        display: inline-block;
+       text-align: left;
+  font-size: 15px;
+       border:15px solid #400040;
+  width: 200px;
+  background: #3498db;
+    }
+    h2{
+    border:8px solid #3498db;
+  width: 400px;
+  background:#3498db ;
+  margin-bottom: 0px;
+    }
+      h5{
+    border:8px solid #400040;
+  width: 400px;
+
+  background:#400040 ;
+  margin-top: 0px;
+    }
+  
+</style>
+</head>
+<body>
+<div class="Home-bar">
+	 <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+        <ul>
+            <li class="Home.html"><a href=Home.html><i class="fa fa-home"></i>Home</a></li>
+            <li class="Menu.html"><a href="Menu.html"><i class="fa fa-clone"></i>Menu</a></li>
+            <li class="Profile.html"><a href="Profile.html"><i class="fa fa-user-circle-o"></i>Profile</a></li>
+            <li class="MyCart.html"><a href="MyCart.html"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
+            <li class="Contact.html"><a href="Contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+            <li class="AboutUs.html"><a href="AboutUs.html"><i class="fa fa-users"></i>About Us</a></li>
+        </ul>
+       
+    </div>
+    <center>
+    
+ 
+<div class="box" >
+     <h2>User Profile</h2>
+    <span>Full Name:</span><span th:text="${profiles.Full_Name}"></span><br/>
+    <span>E-mail:</span><span th:text="${profiles.Email_ID}"></span><br/>
+    <span>Phone Number:</span><span th:text="${profiles.Phone_Number}"></span><br/>
+    <span>Date Of Birth:</span><span th:text="${profiles.DOB}"></span><br/>
+    <span>Address:</span><span th:text="${profiles .Address}"></span><br/>
+    <span>Gender:</span><span th:text="${profiles .Gender}"></span><br/>
+   <b> <h5>  <a class="linkControl" href="./profile.html"
+            	th:href="@{/profile}">Edit Profile</a></h5></b>
+</div>
+
+</body>
+</html>
+	

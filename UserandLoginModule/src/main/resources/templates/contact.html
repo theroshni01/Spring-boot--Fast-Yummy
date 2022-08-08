@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact us</title>
+	
+	<link rel="stylesheet"  href="" th:href="@{/css/contact.css}" />
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+ 
+    <section class="Contact">
+            <div class="Content">
+                <h2>Contact Us</h2>
+                <p>Helps the customer find what they need</p>
+            </div>
+            <div class="Container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text"></div>
+                        <h3>Address: </h3>
+                        <p>Kasbagola Kasbagola Road, West Bengal,East Midnapore</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text"></div>
+                        <h3>phone: </h3>
+                        <p>+91-7076982323</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="text"></div>
+                        <h3>Email: </h3>
+                        <p>fast&Yummy@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ContactForm">
+                <form> 
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </section>
+      </body>
+</html>

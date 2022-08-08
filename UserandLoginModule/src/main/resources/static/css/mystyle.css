@@ -1,0 +1,318 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+
+
+
+header{
+	
+	 background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pic.jpeg);
+	 background-size: 100%;
+	 height: 100vh;
+	 background-repeat: no-repeat;
+	 place-items: center;
+	
+}
+
+
+
+
+
+nav{
+	  background:#620031;
+	  height: 70px;
+	  width: 100%;
+}
+
+
+
+ ul{
+	float:right;
+	list-style-type:none;
+	margin-top: 25px;
+	margin-right: 55px;
+	
+	
+}
+
+ul li{
+	
+	display:inline-block;
+	
+	 
+}
+
+ul li a{
+	
+	text-decoration: none;
+	color : #ffff00;
+	padding: 10px 7px;
+	border: 1px solid #620031 ;
+	transition: 0.6s ease;
+	 
+	
+	
+}
+
+ul li a:hover{
+	background-color: #ef451b;
+	color: #000;
+}
+
+.logo img {
+	float:left;
+	width:70px;
+	margin-left: 90px;
+	padding: 1px 1px ;
+	
+}
+
+.title{
+	position:absolute;
+	top: 25%; 
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+
+.title h1{
+	color: #ff0000;
+	font-size:90px;
+	font-family:Lobster;
+	font-style: italic;
+	text-shadow: 10px 10px 10px black;
+}
+
+
+
+.wrapper{
+	 font-family:  Arial Black;
+    font-size: 35px;
+    font-weight: 500;
+    box-sizing: content-box;
+ 
+    height: 70px;
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 900px;
+    margin-top: 150px;
+     margin-left: 50px;
+
+}
+.words{
+    overflow: hidden;
+   
+}
+span{
+    display: block;
+    height: 100%;
+    padding-left: 200px;
+    color: #ffff00;
+     animation: spin_words 7s infinite;
+    
+}
+@keyframes spin_words{
+
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
+
+.para{
+	font-family: "bold";
+	    font-size: 25px;
+	     color: #ffff00;
+	     margin-top: 10px;
+	  margin-left: 300px;
+}
+
+.slogan{
+	font-family: "bold";
+	    font-size: 25px;
+	     color: #000000;
+	     margin-top: 0px;
+
+	     
+}
+
+.lop{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/pic.jpeg) ;
+  padding: 30px;
+ 
+  
+} 
+.contain1{
+  position: absolute;
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  padding: 0px 0px 0px ;
+  box-shadow: 40px 30px 10px rgba(0,0,0,0.2);
+  perspective: 2700px;
+  
+  
+}
+
+.contain1 .contain2 .lopmo{
+	
+	display: inline-block;
+	float: right;
+
+}
+
+.hea{
+	font-family: "bold";
+	    font-size: 25px;
+	     color: #000000;
+	     margin-top: 30px;
+
+	     
+}
+.sup1{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/pic.jpeg) ;
+  padding: 30px;
+ 
+  
+} 
+.sup2{
+  position: absolute;
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  padding: 0px 0px 0px ;
+  box-shadow: 40px 30px 10px rgba(0,0,0,0.2);
+  perspective: 2700px;
+  
+  
+}
+
+.sup1 .sup2 .sup3{
+	
+	display: inline-block;
+	float: right;
+
+}
+
+.contact
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url("../images/contact.jpg");
+	background-size: cover;
+}
+.Contact .Content
+{
+	max-width: 800px;
+	text-align: center;
+}
+.Contact .Content h2
+{
+	font-size: 36px;
+	font-weight: 500;
+	color: #804040;
+}
+.Contact .Content p
+{
+	font-weight: 300;
+	color: #400000;
+}
+
+
+.Con
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.Con .contactInfo
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.Con .contactInfo .box
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.Con .contactInfo .box .icon
+{
+	min-width: 60px;
+	height: 60px;
+	background: #004040;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+.Con .contactInfo .box .text
+{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	
+	color: #ff8000;
+	flex-direction: column;
+	font-weight: 300;
+}
+.Con .contactInfo .box .text h3
+{
+	font-weight: 500;
+	color: #00bcd4;
+}
+.ContactForm
+{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+.ContactForm h2
+{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}

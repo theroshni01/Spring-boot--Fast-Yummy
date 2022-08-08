@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>SignUp-Fast&Yummy</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet"  href="" th:href="@{/css/mystyle.css}" />
+</head>
+<body>
+<div class="sup1">
+	<div class="sup2">
+		
+    
+ <div class="sup3">
+		<img src="images/pizza.jpg" alt=""  width="450" 
+     height="500" >
+		</div>
+    	
+    	 <form th:action="@{/process_register}" 
+            method="post" style="max-width: 250px;margin-left: 50px ;margin-top: 50px ; "
+            th:object="${user}" >
+            
+            <div class="hea">
+  			<h3> New to Fast & Yummy?</h3>
+  			<h4>Create an account</h4>
+    	</div>
+            
+     
+     
+            <div class="form-group ">
+                
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" th:field="*{email}" required autofocus/>
+               
+            </div>
+           
+             
+            <div class="form-group ">
+                
+                    <input type="password" name="password"   class="form-control" th:field="*{password}" placeholder="Password"
+                            required minlength="6" maxlength="10"/>
+                
+            </div>
+             
+            <div class="form-group  ">
+            
+                    <input type="text" name="firstName"  class="form-control"th:field="*{firstName}" placeholder="First Name"
+                            required minlength="2" maxlength="20"/>
+         
+            </div>
+             
+            <div class="form-group ">
+               
+                    <input type="text" name="lastName" class="form-control" th:field="*{lastName}" placeholder="Last Name"
+                            required minlength="2" maxlength="20" />
+               
+            </div>
+             
+            <div>
+                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>  
+      
+            </div>
+            
+            <div>
+            <br> <h7>Already have an account? <a class="linkControl" href="./login.html"
+            
+            													th:href="@{/login}">Login here</a></h7>
+            </div>
+            </form>
+        </div>
+  
+    </div>
+  <script>
+  
+
+</script>
+       
+</body> 
+</html> 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Login -Fast & Yummy </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous" />
+        <link rel="stylesheet"  href="" th:href="@{/css/mystyle.css}" />
+       
+</head>
+<body>
+
+	
+
+
+<div class="lop">
+
+  <div class="contain1">
+  
+ 
+<div class="contain2 ">
+ <div class="lopmo">
+		<img src="images/burger.jpg" alt=""  width="500" 
+     height="400" >
+		</div>
+   
+    <form th:action="@{/login}" method="post" style="max-width: 250px; margin-left: 30px ;">
+     
+        <div th:if="${param.error}">
+            <p class="text-danger">Invalid Username or Password</p>
+        </div>
+         
+        <div th:if="${param.logout}">
+            <p class="text-warning">You have been logged out.</p>
+        </div>
+         
+         	<div class="slogan">
+         	
+         	 <h2> Login</h2>
+            <h6> Get access to your favourite dishes now</h6>
+         	</div>
+    
+        <div class=" form-group">
+            
+      		 <p>
+                <input type="email" name="email" class="form-control" placeholder="E-mail" required autofocus/>
+          </p>
+           
+            <p>
+                <input type="password" name="password" class="form-control" placeholder="Password" required />
+            </p>
+            <p>
+                <input type="submit" value="Login" class="btn btn-primary btn-block" />
+            </p>
+            <p>
+                <input type="checkbox" name="remember-me" />&nbsp;Remember Me
+            </p>
+            
+            
+            <div><p>OR</p></div>
+       <h4><a th:href="@{/oauth2/authorization/google}">Login with Google</a></h4>   
+</div>
+     </form>
+        </div>
+   
+    </div>    
+</div>
+
+</body>
+</html>
